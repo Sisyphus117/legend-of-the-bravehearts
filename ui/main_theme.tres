@@ -1,0 +1,71 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://do22tkoyp8pqp"]
+
+[ext_resource type="Texture2D" uid="uid://gq4qto4lna1e" path="res://assets/Legacy-Fantasy - High Forest 2.3/HUD/Base-01.png" id="1_icurt"]
+[ext_resource type="FontFile" uid="uid://ccx1ddn3fki28" path="res://assets/SmileySans-Oblique.otf" id="1_wg6li"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tie2p"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h3map"]
+texture = ExtResource("1_icurt")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(94, 14, 20, 20)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5y5ml"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_halbj"]
+atlas = ExtResource("1_icurt")
+region = Rect2(92, 205, 24, 23)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ca1e4"]
+load_path = "res://.godot/imported/Base-01.png-f73c13a1b710c1b73303127eff5ba89c.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l63da"]
+atlas = SubResource("CompressedTexture2D_ca1e4")
+region = Rect2(138, 202, 28, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_on7r5"]
+texture = ExtResource("1_icurt")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(93, 206, 23, 20)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_skng3"]
+texture = ExtResource("1_icurt")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+expand_margin_left = 16.0
+expand_margin_right = 16.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(64, 272, 16, 16)
+
+[resource]
+default_font = ExtResource("1_wg6li")
+default_font_size = 16
+Button/colors/font_pressed_color = Color(1, 1, 1, 0.647059)
+Button/constants/outline_size = 6
+Button/styles/disabled = SubResource("StyleBoxEmpty_tie2p")
+Button/styles/focus = SubResource("StyleBoxTexture_h3map")
+Button/styles/hover = SubResource("StyleBoxEmpty_tie2p")
+Button/styles/normal = SubResource("StyleBoxEmpty_5y5ml")
+Button/styles/pressed = SubResource("StyleBoxTexture_h3map")
+HSlider/icons/grabber = SubResource("AtlasTexture_halbj")
+HSlider/icons/grabber_highlight = SubResource("AtlasTexture_l63da")
+HSlider/styles/slider = SubResource("StyleBoxTexture_on7r5")
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.854902)
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_skng3")

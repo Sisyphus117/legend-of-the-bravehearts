@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://pvuqciyibtv3"]
+
+[ext_resource type="Script" path="res://Enemies/enemy.gd" id="1_e5hup"]
+[ext_resource type="Script" path="res://classses/StateMachine.gd" id="1_qm4rd"]
+[ext_resource type="Script" path="res://classses/Hitbox.gd" id="2_u0y46"]
+[ext_resource type="Script" path="res://classses/Hurtbox.gd" id="3_xcqs8"]
+[ext_resource type="Script" path="res://classses/Stats.gd" id="5_mchbx"]
+[ext_resource type="PackedScene" uid="uid://s3v5s8smagxc" path="res://ui/status_panel.tscn" id="6_57uc5"]
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 4
+script = ExtResource("1_e5hup")
+
+[node name="Graqphics" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Graqphics"]
+
+[node name="Hitbox" type="Area2D" parent="Graqphics"]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("2_u0y46")
+
+[node name="Hurtbox" type="Area2D" parent="Graqphics"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("3_xcqs8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+deterministic = true
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("1_qm4rd")
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource("5_mchbx")
+
+[node name="StatusPanel" parent="." node_paths=PackedStringArray("stats") instance=ExtResource("6_57uc5")]
+offset_left = -28.0
+offset_top = -48.0
+offset_right = 33.0
+offset_bottom = -17.0
+stats = NodePath("../Stats")

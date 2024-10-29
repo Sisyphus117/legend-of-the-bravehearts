@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj0g3mvhq662w"]
+
+[ext_resource type="FontFile" uid="uid://ccx1ddn3fki28" path="res://assets/SmileySans-Oblique.otf" id="1_3ecj4"]
+[ext_resource type="Theme" uid="uid://do22tkoyp8pqp" path="res://ui/main_theme.tres" id="1_wwj2g"]
+[ext_resource type="Script" path="res://ui/title_screen.gd" id="2_fna6l"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wwj2g")
+script = ExtResource("2_fna6l")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -60.0
+offset_right = 67.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_3ecj4")
+theme_override_font_sizes/font_size = 51
+text = "勇者传说"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 96.0
+offset_right = 368.0
+offset_bottom = 197.0
+
+[node name="GameStart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "新的故事"
+
+[node name="GameLoad" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "旧的回忆"
+
+[node name="GameExit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "退出游戏"

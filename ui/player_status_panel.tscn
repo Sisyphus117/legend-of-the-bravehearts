@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://x84wqcconcd"]
+
+[ext_resource type="PackedScene" uid="uid://s3v5s8smagxc" path="res://ui/status_panel.tscn" id="1_43bo4"]
+[ext_resource type="Texture2D" uid="uid://gq4qto4lna1e" path="res://assets/Legacy-Fantasy - High Forest 2.3/HUD/Base-01.png" id="2_33jb6"]
+[ext_resource type="Script" path="res://ui/player_status_panel.gd" id="2_fe1tq"]
+[ext_resource type="Texture2D" uid="uid://bti5a0eaviapb" path="res://assets/generic_char_v0.2/png/red/char_red_1.png" id="3_bby1b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fs1hi"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+texture = ExtResource("2_33jb6")
+region_rect = Rect2(26, 234, 32, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4cm1"]
+atlas = ExtResource("3_bby1b")
+region = Rect2(17, 583, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx2lx"]
+atlas = ExtResource("2_33jb6")
+region = Rect2(307, 6, 58, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53wju"]
+atlas = ExtResource("2_33jb6")
+region = Rect2(308, 135, 56, 2)
+
+[node name="StatusPanel" instance=ExtResource("1_43bo4")]
+offset_top = 5.0
+offset_right = 115.0
+offset_bottom = 38.0
+alignment = 1
+script = ExtResource("2_fe1tq")
+
+[node name="AvataBox2" type="PanelContainer" parent="." index="0"]
+custom_minimum_size = Vector2(31, 31)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs1hi")
+
+[node name="Avata" type="TextureRect" parent="AvataBox2" index="0"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_w4cm1")
+stretch_mode = 5
+
+[node name="VBoxContainer" parent="." index="1"]
+theme_override_constants/separation = 1
+
+[node name="EasedHealthBar" parent="VBoxContainer/HealthBar" index="0"]
+texture_progress_offset = Vector2(1, 0)
+
+[node name="EnergyBar" type="TextureProgressBar" parent="VBoxContainer" index="1"]
+layout_mode = 2
+max_value = 1.0
+step = 0.0
+value = 1.0
+texture_over = SubResource("AtlasTexture_rx2lx")
+texture_progress = SubResource("AtlasTexture_53wju")
+texture_progress_offset = Vector2(1, 1)
