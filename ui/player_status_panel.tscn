@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://s3v5s8smagxc" path="res://ui/status_panel.tscn" id="1_43bo4"]
 [ext_resource type="Texture2D" uid="uid://gq4qto4lna1e" path="res://assets/Legacy-Fantasy - High Forest 2.3/HUD/Base-01.png" id="2_33jb6"]
-[ext_resource type="Script" path="res://ui/player_status_panel.gd" id="2_fe1tq"]
+[ext_resource type="Script" uid="uid://7qdyvhuotuuh" path="res://ui/player_status_panel.gd" id="2_fe1tq"]
 [ext_resource type="Texture2D" uid="uid://bti5a0eaviapb" path="res://assets/generic_char_v0.2/png/red/char_red_1.png" id="3_bby1b"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fs1hi"]
@@ -44,9 +44,6 @@ stretch_mode = 5
 
 [node name="VBoxContainer" parent="." index="1"]
 theme_override_constants/separation = 1
-
-[node name="EasedHealthBar" parent="VBoxContainer/HealthBar" index="0"]
-texture_progress_offset = Vector2(1, 0)
 
 [node name="EnergyBar" type="TextureProgressBar" parent="VBoxContainer" index="1"]
 layout_mode = 2

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://s3v5s8smagxc"]
 
-[ext_resource type="Script" path="res://ui/status_panel.gd" id="1_56qhp"]
+[ext_resource type="Script" uid="uid://e4xu7loo2wl1" path="res://ui/status_panel.gd" id="1_56qhp"]
 [ext_resource type="Texture2D" uid="uid://gq4qto4lna1e" path="res://assets/Legacy-Fantasy - High Forest 2.3/HUD/Base-01.png" id="1_ckl5o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f445h"]

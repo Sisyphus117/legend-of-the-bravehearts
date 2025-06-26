@@ -1,14 +1,14 @@
 [gd_scene load_steps=14 format=3 uid="uid://o5rg7ins4vxr"]
 
-[ext_resource type="Script" path="res://worlds/worlds.gd" id="1_l3oxf"]
+[ext_resource type="Script" uid="uid://b7acqwnbti4j6" path="res://worlds/worlds.gd" id="1_l3oxf"]
 [ext_resource type="AudioStream" uid="uid://bama5iv0jqs0u" path="res://assets/bgm/21 11 forest LOOP.mp3" id="2_8duwg"]
 [ext_resource type="Texture2D" uid="uid://b3o412itjcswd" path="res://assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="2_vothx"]
 [ext_resource type="PackedScene" uid="uid://cdnt3gmsro6jw" path="res://objects/mine_gate.tscn" id="3_innq2"]
-[ext_resource type="Script" path="res://classses/Entrypoint.gd" id="4_bxua8"]
+[ext_resource type="Script" uid="uid://b4aym6216v541" path="res://classses/Entrypoint.gd" id="4_bxua8"]
 [ext_resource type="PackedScene" uid="uid://cf84maenhwnww" path="res://player.tscn" id="5_oe24g"]
 [ext_resource type="Texture2D" uid="uid://cwe2cmgeirsv1" path="res://assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="6_mo5xr"]
 [ext_resource type="Texture2D" uid="uid://cqv4n3302xeed" path="res://assets/Legacy-Fantasy - High Forest 2.3/Trees/Background.png" id="7_eundq"]
-[ext_resource type="Script" path="res://classses/ShakyCamera.gd" id="8_42njo"]
+[ext_resource type="Script" uid="uid://cmg7txrxj3bn2" path="res://classses/ShakyCamera.gd" id="8_42njo"]
 [ext_resource type="PackedScene" uid="uid://cp5wr8sv5eux5" path="res://Enemies/boar.tscn" id="8_k6b4i"]
 [ext_resource type="PackedScene" uid="uid://duay2783rxymg" path="res://objects/save_stone.tscn" id="9_ghnt5"]
 

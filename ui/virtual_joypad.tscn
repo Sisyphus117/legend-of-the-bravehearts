@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=3 uid="uid://bm48y6qu2xcvn"]
 
 [ext_resource type="Texture2D" uid="uid://gq4qto4lna1e" path="res://assets/Legacy-Fantasy - High Forest 2.3/HUD/Base-01.png" id="1_juksq"]
-[ext_resource type="Script" path="res://ui/virtual_joypad.gd" id="1_xbm2h"]
-[ext_resource type="Script" path="res://ui/knob.gd" id="2_84xjk"]
+[ext_resource type="Script" uid="uid://bvs6kdg4dyri1" path="res://ui/virtual_joypad.gd" id="1_xbm2h"]
+[ext_resource type="Script" uid="uid://cvuwievlftedo" path="res://ui/knob.gd" id="2_84xjk"]
 [ext_resource type="Theme" uid="uid://do22tkoyp8pqp" path="res://ui/main_theme.tres" id="3_rhmcu"]
-[ext_resource type="Script" path="res://ui/label.gd" id="5_qmdhq"]
+[ext_resource type="Script" uid="uid://bw2q6sinefsdd" path="res://ui/label.gd" id="5_qmdhq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a5kqf"]
 atlas = ExtResource("1_juksq")

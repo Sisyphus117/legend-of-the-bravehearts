@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=4 uid="uid://cx3mlxxptxfjf"]
 
-[ext_resource type="Script" path="res://globals/sound_manager.gd" id="1_dhyx8"]
+[ext_resource type="Script" uid="uid://b7f5ctipmry" path="res://globals/sound_manager.gd" id="1_dhyx8"]
 [ext_resource type="AudioStream" uid="uid://sids465to5lu" path="res://assets/sounds/sfx/07_human_atk_sword_1.ogg" id="2_yh8gu"]
 [ext_resource type="AudioStream" uid="uid://c0ww74rmlbws4" path="res://assets/sounds/sfx/slide.wav" id="3_slu7e"]
 [ext_resource type="AudioStream" uid="uid://ckvww7dplqlxg" path="res://assets/sounds/sfx/hurt.mp3" id="4_mwhkb"]

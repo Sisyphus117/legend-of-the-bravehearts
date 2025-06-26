@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://pvuqciyibtv3"]
 
-[ext_resource type="Script" path="res://Enemies/enemy.gd" id="1_e5hup"]
-[ext_resource type="Script" path="res://classses/StateMachine.gd" id="1_qm4rd"]
-[ext_resource type="Script" path="res://classses/Hitbox.gd" id="2_u0y46"]
-[ext_resource type="Script" path="res://classses/Hurtbox.gd" id="3_xcqs8"]
-[ext_resource type="Script" path="res://classses/Stats.gd" id="5_mchbx"]
+[ext_resource type="Script" uid="uid://d0pgka281mpk5" path="res://Enemies/enemy.gd" id="1_e5hup"]
+[ext_resource type="Script" uid="uid://c1l66s7rnwjnw" path="res://classses/StateMachine.gd" id="1_qm4rd"]
+[ext_resource type="Script" uid="uid://bvugfygpvus8b" path="res://classses/Hitbox.gd" id="2_u0y46"]
+[ext_resource type="Script" uid="uid://dpv3ybe48ojar" path="res://classses/Hurtbox.gd" id="3_xcqs8"]
+[ext_resource type="Script" uid="uid://bq5hamwrfopjx" path="res://classses/Stats.gd" id="5_mchbx"]
 [ext_resource type="PackedScene" uid="uid://s3v5s8smagxc" path="res://ui/status_panel.tscn" id="6_57uc5"]
 
 [node name="Enemy" type="CharacterBody2D"]

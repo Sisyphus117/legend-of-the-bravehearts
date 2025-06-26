@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dgr8h87nldhoq"]
 
 [ext_resource type="Theme" uid="uid://do22tkoyp8pqp" path="res://ui/main_theme.tres" id="1_smrqe"]
-[ext_resource type="Script" path="res://ui/game_end_screen.gd" id="2_npnkm"]
+[ext_resource type="Script" uid="uid://cfv0pcx4fprbp" path="res://ui/game_end_screen.gd" id="2_npnkm"]
 
 [node name="GameEndScreen" type="Control"]
 layout_mode = 3

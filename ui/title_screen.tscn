@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://ccx1ddn3fki28" path="res://assets/SmileySans-Oblique.otf" id="1_3ecj4"]
 [ext_resource type="Theme" uid="uid://do22tkoyp8pqp" path="res://ui/main_theme.tres" id="1_wwj2g"]
-[ext_resource type="Script" path="res://ui/title_screen.gd" id="2_fna6l"]
+[ext_resource type="Script" uid="uid://ua5txuej014o" path="res://ui/title_screen.gd" id="2_fna6l"]
 [ext_resource type="Texture2D" uid="uid://b3o412itjcswd" path="res://assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="4_l3n7c"]
 [ext_resource type="Texture2D" uid="uid://cwe2cmgeirsv1" path="res://assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="5_k0af8"]
 [ext_resource type="Texture2D" uid="uid://cqv4n3302xeed" path="res://assets/Legacy-Fantasy - High Forest 2.3/Trees/Background.png" id="6_ruuir"]
@@ -436,8 +436,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g4vov"]
 _data = {
-"RESET": SubResource("Animation_fn1mk"),
-"items_enter": SubResource("Animation_nytqi")
+&"RESET": SubResource("Animation_fn1mk"),
+&"items_enter": SubResource("Animation_nytqi")
 }
 
 [node name="TitleScreen" type="Control"]
@@ -723,7 +723,7 @@ text = "退出游戏"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_g4vov")
+&"": SubResource("AnimationLibrary_g4vov")
 }
 autoplay = "items_enter"
 

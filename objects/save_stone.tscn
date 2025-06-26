@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://duay2783rxymg"]
 
-[ext_resource type="Script" path="res://objects/save_stone.gd" id="1_3xh0v"]
+[ext_resource type="Script" uid="uid://csj5gkv2amkcn" path="res://objects/save_stone.gd" id="1_3xh0v"]
 [ext_resource type="Texture2D" uid="uid://bur6ojtd5tdng" path="res://assets/Legacy-Fantasy - High Forest 2.3/Assets/Props-Rocks.png" id="2_pmttw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jo0hq"]
@@ -198,9 +198,9 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_laiof"]
 _data = {
-"RESET": SubResource("Animation_fw0ku"),
-"activited": SubResource("Animation_lt7c5"),
-"ready": SubResource("Animation_872gy")
+&"RESET": SubResource("Animation_fw0ku"),
+&"activited": SubResource("Animation_lt7c5"),
+&"ready": SubResource("Animation_872gy")
 }
 
 [node name="SaveStone" type="Area2D"]
@@ -240,6 +240,6 @@ texture_scale = 5.0
 deterministic = true
 callback_mode_process = 0
 libraries = {
-"": SubResource("AnimationLibrary_laiof")
+&"": SubResource("AnimationLibrary_laiof")
 }
 autoplay = "ready"

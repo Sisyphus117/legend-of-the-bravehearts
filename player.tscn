@@ -1,18 +1,18 @@
 [gd_scene load_steps=54 format=3 uid="uid://cf84maenhwnww"]
 
 [ext_resource type="Texture2D" uid="uid://bti5a0eaviapb" path="res://assets/generic_char_v0.2/png/red/char_red_1.png" id="1_ar0y2"]
-[ext_resource type="Script" path="res://player.gd" id="1_vaoq4"]
+[ext_resource type="Script" uid="uid://lt0w7ns7fm8l" path="res://player.gd" id="1_vaoq4"]
 [ext_resource type="Texture2D" uid="uid://dbvqsve7akmah" path="res://assets/generic_char_v0.2/png/red/char_red_2.png" id="2_kt1c6"]
-[ext_resource type="Script" path="res://classses/StateMachine.gd" id="3_on0fo"]
-[ext_resource type="Script" path="res://classses/Hurtbox.gd" id="3_qrbpv"]
-[ext_resource type="Script" path="res://classses/Hitbox.gd" id="4_1vp18"]
+[ext_resource type="Script" uid="uid://c1l66s7rnwjnw" path="res://classses/StateMachine.gd" id="3_on0fo"]
+[ext_resource type="Script" uid="uid://dpv3ybe48ojar" path="res://classses/Hurtbox.gd" id="3_qrbpv"]
+[ext_resource type="Script" uid="uid://bvugfygpvus8b" path="res://classses/Hitbox.gd" id="4_1vp18"]
 [ext_resource type="PackedScene" uid="uid://bt16g4rb40x0d" path="res://ui/game_over_screen.tscn" id="8_58053"]
 [ext_resource type="PackedScene" uid="uid://x84wqcconcd" path="res://ui/player_status_panel.tscn" id="8_l21dw"]
 [ext_resource type="Texture2D" uid="uid://dywg7mx78im1t" path="res://assets/gdb-keyboard-2.png" id="9_2d3wp"]
 [ext_resource type="PackedScene" uid="uid://xk6o8n0yeur6" path="res://ui/pause_screen.tscn" id="9_l6wtx"]
 [ext_resource type="PackedScene" uid="uid://bm48y6qu2xcvn" path="res://ui/virtual_joypad.tscn" id="10_ybk0b"]
 [ext_resource type="Texture2D" uid="uid://m6tpwvd8mqps" path="res://assets/gdb-switch-2.png" id="11_w3nmk"]
-[ext_resource type="Script" path="res://classses/interaction_icon.gd" id="12_4qla4"]
+[ext_resource type="Script" uid="uid://b0upqu2hn2ely" path="res://classses/interaction_icon.gd" id="12_4qla4"]
 [ext_resource type="Texture2D" uid="uid://in2mdipdm2r1" path="res://assets/gdb-playstation-2.png" id="12_r3u0p"]
 [ext_resource type="Texture2D" uid="uid://6ynwut3tyxqv" path="res://assets/gdb-xbox-2.png" id="13_gw4bx"]
 
@@ -2466,21 +2466,21 @@ tracks/12/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_taxpf"]
 _data = {
-"RESET": SubResource("Animation_wkugq"),
-"attack_1": SubResource("Animation_pw06i"),
-"attack_2": SubResource("Animation_tqumf"),
-"attack_3": SubResource("Animation_hykst"),
-"die": SubResource("Animation_t1ein"),
-"fall": SubResource("Animation_r83vi"),
-"hurt": SubResource("Animation_n8o71"),
-"idle": SubResource("Animation_chlgk"),
-"jump": SubResource("Animation_ubcyp"),
-"landing": SubResource("Animation_xkpua"),
-"running": SubResource("Animation_dw8ys"),
-"slide_end": SubResource("Animation_kkobv"),
-"slide_start": SubResource("Animation_spayy"),
-"sliding_loop": SubResource("Animation_28i0m"),
-"wall_sliding": SubResource("Animation_7kjkx")
+&"RESET": SubResource("Animation_wkugq"),
+&"attack_1": SubResource("Animation_pw06i"),
+&"attack_2": SubResource("Animation_tqumf"),
+&"attack_3": SubResource("Animation_hykst"),
+&"die": SubResource("Animation_t1ein"),
+&"fall": SubResource("Animation_r83vi"),
+&"hurt": SubResource("Animation_n8o71"),
+&"idle": SubResource("Animation_chlgk"),
+&"jump": SubResource("Animation_ubcyp"),
+&"landing": SubResource("Animation_xkpua"),
+&"running": SubResource("Animation_dw8ys"),
+&"slide_end": SubResource("Animation_kkobv"),
+&"slide_start": SubResource("Animation_spayy"),
+&"sliding_loop": SubResource("Animation_28i0m"),
+&"wall_sliding": SubResource("Animation_7kjkx")
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wv13v"]
@@ -2679,7 +2679,7 @@ shape = SubResource("RectangleShape2D_goji2")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 deterministic = true
 libraries = {
-"": SubResource("AnimationLibrary_taxpf")
+&"": SubResource("AnimationLibrary_taxpf")
 }
 
 [node name="coyoteTimer" type="Timer" parent="."]
